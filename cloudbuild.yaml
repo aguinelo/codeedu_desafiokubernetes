@@ -1,12 +1,12 @@
 steps:
 
 - id: "Rodando app test"
-  name: 'gcr.io/cloud-builders/go'
+  name: 'gcr.io/cloud-builders/go:alpine'
   args: ['test', './desafiogo/src/app']
 
-- id: "Image Build"
-  name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/aguinelo_desafikubernetes_app:latest', './desafiogo']
+# - id: "Image Build"
+#   name: 'gcr.io/cloud-builders/docker'
+#   args: ['build', '-t', 'gcr.io/$PROJECT_ID/aguinelo_desafikubernetes_app:latest', './desafiogo']
 
-images:
-  - 'gcr.io/$PROJECT_ID/aguinelo_desafikubernetes_app:latest'
+# images:
+#   - 'gcr.io/$PROJECT_ID/aguinelo_desafikubernetes_app:latest'
