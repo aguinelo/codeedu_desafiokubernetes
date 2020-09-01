@@ -2,4 +2,5 @@ steps:
 
   - id: "Rodando app test"
     name: 'gcr.io/cloud-builders/go'
-    args: ['test', './desafiogo/src/app']
+    env: ['PROJECT_ROOT=desafiogo/src/app']
+    args: ['test', '.']
