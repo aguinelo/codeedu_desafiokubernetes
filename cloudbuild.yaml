@@ -1,8 +1,12 @@
 steps:
 
+- id: "Rodando go version"
+  name: 'gcr.io/cloud-builders/go'
+  args: ['version']
+  
 - id: "Rodando app test"
   name: 'gcr.io/cloud-builders/go'
-  env: ['PROJECT_ROOT=desafiogo']
+  # env: ['PROJECT_ROOT=desafiogo']
   args: ['test', '.']
 
 - id: "Image Build"
