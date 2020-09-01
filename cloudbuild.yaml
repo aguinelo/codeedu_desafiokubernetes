@@ -6,7 +6,7 @@ steps:
     - GO111MODULE=on
     - PROJECT_ROOT=./desafiogo/src/app
   # dir: './desafiogo/src/app/'
-  args: ['test', '.']
+  args: ['test', './desafiogo/src/app']
 
 # - id: "Image Build"
 #   name: 'gcr.io/cloud-builders/docker'
