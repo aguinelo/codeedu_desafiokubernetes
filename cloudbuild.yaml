@@ -7,8 +7,8 @@ steps:
   
 - id: "Rodando app test"
   name: 'gcr.io/cloud-builders/go'
-  # env: ['PROJECT_ROOT=desafiogo']
-  args: ['test', '.']
+  env: ['PROJECT_ROOT=github.com/aguinelo/codeedu_desafiokubernetes']
+  args: ['test', '.desafiogo/src/app']
 
 - id: "Image Build"
   name: 'gcr.io/cloud-builders/docker'
