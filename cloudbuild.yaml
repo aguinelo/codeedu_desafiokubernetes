@@ -2,12 +2,12 @@ steps:
 
 - id: "Rodando app test"
   name: 'gcr.io/cloud-builders/go'
-  env:
-    - GO111MODULE=on
-    - PROJECT_ROOT=./desafiogo/src/app
+  # env:
+  #   - GO111MODULE=on
+  #   - PROJECT_ROOT=./desafiogo/src/app
   # dir: './desafiogo/src/app/'
   # args: ['test', './desafiogo/src/app']
-  args: ['version', '&& ls']
+  args: ['version']
 
 # - id: "Image Build"
 #   name: 'gcr.io/cloud-builders/docker'
