@@ -1,14 +1,14 @@
 steps:
 
-- id: "Rodando go version"
-  name: 'gcr.io/cloud-builders/go'
-  env: ['PROJECT_ROOT=github.com/aguinelo/codeedu_desafiokubernetes']
-  args: ['version']
+# - id: "Rodando go version"
+#   name: 'gcr.io/cloud-builders/go'
+#   env: ['PROJECT_ROOT=github.com/aguinelo/codeedu_desafiokubernetes']
+#   args: ['version']
   
 - id: "Rodando app test"
   name: 'gcr.io/cloud-builders/go'
   env: ['PROJECT_ROOT=github.com/aguinelo/codeedu_desafiokubernetes']
-  args: ['test', '.desafiogo/src/app']
+  args: ['test', './desafiogo/src/app']
 
 - id: "Image Build"
   name: 'gcr.io/cloud-builders/docker'
