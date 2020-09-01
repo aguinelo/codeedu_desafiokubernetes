@@ -2,6 +2,7 @@ steps:
 
 - id: "Rodando go version"
   name: 'gcr.io/cloud-builders/go'
+  env: ['PROJECT_ROOT=github.com/aguinelo/codeedu_desafiokubernetes']
   args: ['version']
   
 - id: "Rodando app test"
